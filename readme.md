@@ -86,8 +86,8 @@ Wuys Macro được tạo ra để **hỗ trợ người chơi**, không thay th
 
 ## 🔗 Liên kết
 
-- 🌐 Website: https://wuyscute123.atwebpages.com  
-- 💻 GitHub: https://github.com/Wuyscute123  
+- 🌐 Website: [GetWuysMacro Here](http://getwuysmacro.getenjoyment.net/)
+- 💻 GitHub: https://github.com/wuyscute123  
 
 ---
 
