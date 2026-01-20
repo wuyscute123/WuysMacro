@@ -1,3 +1,48 @@
+# 🛡️ Security & Build Disclaimer
+
+Wuys Macro là dự án mã nguồn mở. Repository cung cấp hai cách sử dụng:
+
+- 📦 Bản build sẵn (.exe) – tiện lợi cho người dùng phổ thông
+
+-🛠️ Tự build từ source – được khuyến khích cho những ai muốn mức độ tin cậy cao nhất
+
+**Nếu bạn có kiến thức kỹ thuật, việc tự build từ mã nguồn luôn là lựa chọn an toàn và minh bạch nhất.
+
+# 🔍 VirusTotal & False Positive
+
+Tại thời điểm phát hành Release v1.0, bản .exe build sẵn đã được kiểm tra bằng VirusTotal:
+
+🔗 Link kiểm tra VirusTotal:
+https://www.virustotal.com/gui/file/af9aca281253f784a0d913269450dfecf713a4aa1cb69c827cd64fe58c35a070/detection
+
+Kết quả: 4 / 70 engine phát hiện
+
+Các cảnh báo đến từ AI / heuristic / static machine learning
+
+Không có antivirus lớn nào (Microsoft Defender, Kaspersky, Bitdefender, ESET, Avast, …) phát hiện mã độc
+
+# Các engine đã flag:
+- Bkav Pro – AI heuristic, thường false positive với macro & PyInstaller
+- Malwarebytes (AI) – phát hiện dựa trên ML, không phải signature
+- SecureAge – static analysis, không phân tích runtime
+- SentinelOne (Static ML) – đánh dấu “Suspicious”, không kết luận malware
+
+# 📌 Đây là false positive phổ biến với:
+
+- Phần mềm macro / auto click
+- Tool mô phỏng input
+- File .exe build bằng PyInstaller và không ký số
+
+# 📂 Minh bạch & Cam kết
+Wuys Macro:
+- Không inject game
+- Không can thiệp bộ nhớ
+- Không gửi dữ liệu
+- Không có persistence
+- Không keylogger
+
+--
+
 # Wuys Macro
 
 Wuys Macro là một công cụ **macro hỗ trợ input** cho Roblox (Blade Ball), được tạo ra nhằm **giảm spam tay**, **ổn định thao tác** và giúp người chơi tập trung hơn vào phản xạ và quyết định trong game.
