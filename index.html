@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wuysbio - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Video background luôn chạy từ đầu -->
+<video autoplay muted loop id="video-background" playsinline>
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+<div class="layer" id="layer1" onclick="showLayer2()">
+    <div id="click-anywhere">🔄 system loading...</div>
+</div>
+
+<div class="layer" id="layer2">
+    <button id="hamburger-btn" onclick="toggleSidebar()">☰</button>
+    
+    <div id="sidebar">
+        <button onclick="showView('main')">🏡 Main Profile</button>
+    </div>
+
+    <div id="profile-card">
+        <!-- Thêm tiêu đề Welcome -->
+        <h1 class="welcome-header">Welcome to my page...!</h1>
+        
+        <div id="main-view" class="page-content active-page">
+            <div class="button-group">
+                <a href="https://github.com/wuyscute123/WuysMacro/releases/tag/1.2Legit" class="btn btn-download">Tải Xuống Ngay</a>
+                <a href="https://github.com/wuyscute123/WuysMacro" class="btn btn-repo">Check My Repo</a>
+            </div>
+
+            <div class="video-testing-container">
+                <p class="highlight-label">Highlight Testing</p>
+                <video controls class="testing-video">
+                    <source src="testing-video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Thêm phần Wuys Macro -->
+            <div class="macro-info-container">
+                <h2 class="macro-title">🔥 Wuys Macro</h2>
+                
+                <div class="macro-details">
+                    <p><span class="macro-label">Tên Macro:</span> Wuys Macro</p>
+                    <p><span class="macro-label">Phiên bản mới nhất:</span> v1.2 – Legit Mode</p>
+                    
+                    <div class="macro-description">
+                        <p>Wuys Macro là một macro tập trung vào stability, timing và thực chiến, được tối ưu để giữ nhịp ổn định trong sustained clash mà không phụ thuộc vào brute force CPS.</p>
+                        
+                        <p class="version-highlight">Phiên bản v1.2 – Legit Mode mang lại:</p>
+                        <ul class="feature-list">
+                            <li>Engine ổn định hơn (đạt ~91% stability ở 60 CPS)</li>
+                            <li>Loại bỏ các tính năng dư thừa để tối ưu hiệu năng</li>
+                            <li>Legit Mode với jitter click style tự nhiên</li>
+                            <li>Cải thiện hiệu năng và độ phản hồi tổng thể</li>
+                            <li>Dễ dàng cân macro AHK kiểu cũ và các auto clicker spam CPS cao</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social-links">
+                        <p><span class="macro-label">🌐 Kết nối & Dự án</span></p>
+                        <p>Facebook: wuys nee🐧</p>
+                        <p>GitHub Project:</p>
+                        <a href="https://github.com/wuyscute123/WuysMacro" target="_blank" class="github-link">👉 https://github.com/wuyscute123/WuysMacro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="copyright">©2026 By Wuys.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
