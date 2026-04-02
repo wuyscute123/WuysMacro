@@ -59,7 +59,7 @@ v2.0 – Toe Method: dynamic timing + kiểm soát clash
 
 📊 Performance
 
-Hoạt động ổn định ở ~60 CPS
+Hoạt động ổn định ở ~200+ CPS
 
 Không cần CPS quá cao
 
