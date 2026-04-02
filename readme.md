@@ -1,149 +1,289 @@
-# 🛡️ Security & Build Disclaimer
 
-Wuys Macro là dự án mã nguồn mở. Repository cung cấp hai cách sử dụng:
+⚙️ Wuys Macro
 
-- 📦 Bản build sẵn (.exe) – tiện lợi cho người dùng phổ thông
+> Lightweight. Stable. Built for real clash.
 
--🛠️ Tự build từ source – được khuyến khích cho những ai muốn mức độ tin cậy cao nhất
 
-**Nếu bạn có kiến thức kỹ thuật, việc tự build từ mã nguồn luôn là lựa chọn an toàn và minh bạch nhất.
 
-# 🔍 VirusTotal & False Positive
+Wuys Macro là một project mã nguồn mở tập trung vào một mục tiêu duy nhất:
 
-Tại thời điểm phát hành Release v1.0, bản .exe build sẵn đã được kiểm tra bằng VirusTotal:
+> Giữ nhịp – giữ ổn định – thắng trong clash thực tế
 
-🔗 Link kiểm tra VirusTotal:
-https://www.virustotal.com/gui/file/af9aca281253f784a0d913269450dfecf713a4aa1cb69c827cd64fe58c35a070/detection
 
-Kết quả: 4 / 70 engine phát hiện
 
-Các cảnh báo đến từ AI / heuristic / static machine learning
+Macro không chạy theo CPS ảo hay spam vô nghĩa, mà tập trung vào:
 
-Không có antivirus lớn nào (Microsoft Defender, Kaspersky, Bitdefender, ESET, Avast, …) phát hiện mã độc
+Stability
 
-# Các engine đã flag:
-- Bkav Pro – AI heuristic, thường false positive với macro & PyInstaller
-- Malwarebytes (AI) – phát hiện dựa trên ML, không phải signature
-- SecureAge – static analysis, không phân tích runtime
-- SentinelOne (Static ML) – đánh dấu “Suspicious”, không kết luận malware
+Timing
 
-# 📌 Đây là false positive phổ biến với:
+Performance trong combat thật
 
-- Phần mềm macro / auto click
-- Tool mô phỏng input
-- File .exe build bằng PyInstaller và không ký số
 
-# 📂 Minh bạch & Cam kết
-Wuys Macro:
-- Không inject game
-- Không can thiệp bộ nhớ
-- Không gửi dữ liệu
-- Không có persistence
-- Không keylogger
-
---
-
-# Wuys Macro
-
-Wuys Macro là một công cụ **macro hỗ trợ input** cho Roblox (Blade Ball), được tạo ra nhằm **giảm spam tay**, **ổn định thao tác** và giúp người chơi tập trung hơn vào phản xạ và quyết định trong game.
-
-> Đây **không phải hack / cheat**.  
-> Wuys Macro **không inject**, **không đọc dữ liệu game**, **không can thiệp server** — chỉ mô phỏng chuột và bàn phím hợp lệ, tương tự autoclicker hoặc macro chuột gaming.
 
 ---
 
-## ✨ Tính năng chính
+🚀 Features
 
-- 🔘 **Spam input thông minh**
-  - Chuột trái + phím `F` + `G`
-  - 20 CPS / phím
-  - Kích hoạt bằng **giữ Mouse 4**, thả là dừng ngay
+⚡ Engine tối ưu (SendInput-based)
 
-- 🎯 **Curve đa hướng**
-  - Kích hoạt bằng **Mouse 5**
-  - Curve ngẫu nhiên: trái / phải / dọc / chéo
-  - Click ngay lập tức và **trả chuột về vị trí cũ**
-  - Tổng delay ≤ **0.05s**
+🧠 Timing ổn định, giữ nhịp lâu
 
-- 🧠 **Input giống người thật**
-  - Delay nhỏ, không cứng
-  - Không spam vô hạn
-  - Người chơi vẫn là người quyết định mọi hành động
+🔁 Spam cycle gọn (LMB + F + G)
 
-- 📢 **Loading + quảng cáo**
-  - Hiển thị loading 3 giây khi khởi động
-  - Random nội dung giới thiệu / disclaimer
+📊 Hiệu quả ở CPS vừa phải (~60–100 CPS)
+
+🥊 Tối ưu cho clash khoảng cách gần
+
+
 
 ---
 
-## 🆚 Vì sao không dùng AHK?
+🧬 Versions Overview
 
-Wuys Macro không hướng tới macro “cứng” như AHK truyền thống.
+v1.0 → Reborn: nền tảng + tối ưu core
 
-Khác biệt chính:
-- Input **mượt và tự nhiên hơn**
-- Curve **đa hướng, random**
-- Macro **không điều khiển người chơi**, mà chỉ hỗ trợ thao tác
+v1.1: thử nghiệm curve (đã loại bỏ)
 
-Mục tiêu là **giữ cảm giác chơi thật**, không phải auto chơi.
+v1.2 – Legit Mode: tăng stability + clean behavior
 
----
+v1.2.1 trở xuống: sử dụng pyautogui cho input
 
-## ❓ Câu hỏi thường gặp
+v1.3 – Engine Update: rebuild engine (SendInput + ctypes)
 
-### Wuys Macro có chứa virus không?
-Không.  
-Dự án **mã nguồn mở**, bạn có thể tự kiểm tra.  
-Hoàn toàn có thể quét bằng **VirusTotal** hoặc antivirus bất kỳ.
+v2.0 – Toe Method: dynamic timing + kiểm soát clash
+
+
 
 ---
 
-### Wuys Macro có clash thắng hacker không?
-**50–50.**  
-Không có tool nào đảm bảo thắng hack thật.  
-Nhưng Wuys Macro **ăn được macro AHK kiểu cũ** và **autoclicker thông thường** nhờ input linh hoạt hơn.
+📊 Performance
+
+Hoạt động ổn định ở ~60 CPS
+
+Không cần CPS quá cao
+
+Clash hiệu quả ở ping ~50–70ms
+
+
+Thực tế:
+
+> ~200 CPS + 60 FPS đã đủ để giữ nhịp clash ổn định
+
+
+
 
 ---
 
-### Dùng Wuys Macro có bị ban không?
-Wuys Macro **không inject, không exploit**, chỉ mô phỏng input hợp lệ.  
-Tuy nhiên, việc sử dụng vẫn phụ thuộc **luật game / server**.  
-Bạn tự chịu trách nhiệm khi dùng trong môi trường cạnh tranh.
+🧪 Real Match Result
+
+Test thực chiến:
+
+Wuys Macro vs cheater
+
+Điều kiện ngang nhau (mạng, thiết bị, môi trường)
+
+
+Kết quả:
+
+> 3 – 1 (BO3) → Wuys Macro thắng
+
+
+
+Điều này cho thấy:
+
+> Timing + stability quan trọng hơn CPS.
+
+
+
 
 ---
 
-### Wuys Macro khác gì autoclicker?
-Wuys Macro được **tối ưu riêng cho Blade Ball**:
-- Có curve
-- Có logic theo thao tác người chơi
-- Không chỉ spam click đơn thuần
+🔓 Open Source
+
+Project hoàn toàn mã nguồn mở.
+
+Bạn có thể:
+
+Kiểm tra toàn bộ source
+
+Tự build lại
+
+Modify theo nhu cầu
+
+
 
 ---
 
-## 👤 Về tác giả
+🔐 Security & Transparency
 
-**Wuys** *(tên thật: Huy)* là một developer độc lập, từng phát triển nhiều dự án **Discord** và công cụ hỗ trợ cộng đồng.  
-Thông thạo **Python, HTML, CSS, JavaScript**, mình tập trung xây dựng các công cụ **ổn định, minh bạch và dễ dùng**.
+Wuys Macro được thiết kế theo nguyên tắc:
 
-Wuys Macro được tạo ra để **hỗ trợ người chơi**, không thay thế kỹ năng.
+> Ít dependency → dễ kiểm tra → minh bạch tuyệt đối
 
----
 
-## 🔗 Liên kết
 
-- 🌐 Website: [GetWuysMacro Here](http://getwuysmacro.getenjoyment.net/)
-- 💻 GitHub: https://github.com/wuyscute123  
 
 ---
 
-## ⚠️ Tuyên bố miễn trừ trách nhiệm
+📦 Thư viện sử dụng (phiên bản hiện tại)
 
-Wuys Macro là **công cụ hỗ trợ input**.  
-Tác giả **không chịu trách nhiệm** nếu bạn sử dụng sai mục đích hoặc vi phạm luật của game / server.
+ctypes (built-in Python)
+→ Gọi Windows API (SendInput)
+
+keyboard
+→ Bắt phím và điều khiển input
+
+
 
 ---
 
-## 📜 License
+📜 Lưu ý về phiên bản cũ (Legacy)
 
-Open-source.  
-Bạn được phép học hỏi, chỉnh sửa và đóng góp, miễn là **tôn trọng tác giả gốc**.
+Các phiên bản từ v1.2.1 trở xuống có sử dụng:
+
+pyautogui
+
+
+Mục đích sử dụng:
+
+> Chỉ để gửi input (send input), không sử dụng cho bất kỳ hành vi nào khác.
+
+
+
+
+---
+
+🚫 Cam kết bảo mật
+
+Wuys Macro KHÔNG BAO GIỜ sử dụng các thư viện hoặc cơ chế có rủi ro cao, bao gồm:
+
+Thư viện điều khiển từ xa / backdoor
+
+Thư viện gửi dữ liệu ra ngoài (networking)
+
+Thư viện chạy lệnh hệ thống ẩn
+
+Obfuscation / code che giấu hành vi
+
+Bất kỳ cơ chế nào liên quan tới:
+
+Data exfiltration
+
+Background service ẩn
+
+Crypto mining
+
+
+
+Ví dụ các thư viện thường bị lạm dụng (và không được sử dụng trong các phiên bản hiện tại):
+
+pynput
+
+pyautogui (đã loại bỏ từ v1.3 trở lên)
+
+socket
+
+requests
+
+subprocess
+
+
+
+---
+
+⚠ False Positive (VirusTotal)
+
+Khi scan file .exe, bạn có thể thấy cảnh báo như:
+
+trojan.tedy
+
+
+Đây là false positive, do:
+
+Hook bàn phím (keyboard)
+
+Gọi Windows API (ctypes)
+
+Hành vi automation giống macro
+
+File .exe được build từ Python
+
+
+
+---
+
+✔ Cách kiểm tra an toàn nhất
+
+Scan trực tiếp file main.py trên VirusTotal
+
+Hoặc tự build từ source
+
+
+
+---
+
+🧠 Important
+
+> Wuys Macro chạy hoàn toàn ở user-mode
+Không gửi dữ liệu
+Không có network
+Không có backdoor
+
+
+
+
+---
+
+🛠 Usage
+
+Chạy bằng Python:
+
+python main.py
+
+Hoặc sử dụng bản build .exe
+
+
+---
+
+🧠 Philosophy
+
+Macro này không được tạo ra để:
+
+Spam CPS vô hạn
+
+Fake chỉ số
+
+
+Mà để:
+
+> Giữ nhịp – giữ ổn định – chiến thắng trong clash thực tế
+
+
+
+
+---
+
+📌 Links
+
+Facebook: wuys nee🐧
+
+GitHub: https://github.com/wuyscute123/WuysMacro
+
+
+
+---
+
+🌐 Official Website
+
+> Website download chính thức: wuysmacro.eu.cc
+
+---
+
+🏁 Final
+
+Wuys Macro không cố gắng trở thành macro mạnh nhất.
+
+Nhưng nó được xây dựng để:
+
+> đủ mạnh để thắng – và đủ ổn định để sống lâu trong mọi tình huống. 😏
